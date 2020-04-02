@@ -1,5 +1,6 @@
 program
 start
+	t := 3!
 	'a'!
 	'\''!
 	""!
