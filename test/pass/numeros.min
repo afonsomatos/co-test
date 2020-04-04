@@ -3,7 +3,7 @@ number decimal;
 number binario;
 number octal;
 number zero;
-number hexadec;
+number hexadec
 start
   decimal := 10;
   binario := 0b10;
