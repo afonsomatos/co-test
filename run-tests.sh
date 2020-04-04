@@ -30,7 +30,7 @@ echo " ===== PASS TESTS ===== "
 for f in $(find test/pass -name "*.min"); do
 	"$srcDir/$exe" < $f &> /dev/null
 	if [ $? -ne 0 ]; then
-		echo FAILED $f
+		echo -e "\e[31mFAILED\e[0m" $f
 	else
 		echo PASSED $f
 	fi
@@ -43,7 +43,7 @@ for f in $(find test/fail -name "*.min"); do
 	if [ $? -ne 0 ]; then
 		echo PASSED $f
 	else
-		echo FAILED $f
+		echo -e "\e[31mFAILED\e[0m" $f
 	fi
 done
 
