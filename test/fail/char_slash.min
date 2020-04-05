@@ -1,4 +1,4 @@
 program
-    number c = '\'
+    number c := '\'
 start
 end
