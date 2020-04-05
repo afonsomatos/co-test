@@ -1,6 +1,6 @@
 program
-    number x = 5;
-    number y = 3
+    number x := 5;
+    number y := 3
 start
     $ Arithmetic $
     x + y !  "\n"!   $$ 8
