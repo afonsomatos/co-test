@@ -1,0 +1,7 @@
+program
+    function void hello number a do
+        number a;
+        return a
+start
+
+end
