@@ -1,0 +1,4 @@
+program
+start
+    return '\0a' = '\A'
+end

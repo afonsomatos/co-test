@@ -65,6 +65,6 @@ echo passed $pass/$total
 
 # Clean source directory
 cd $srcDir
-make clean > /dev/null
+# make clean > /dev/null
 
 exit $((($total-$pass)?1:0))
