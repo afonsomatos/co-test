@@ -1,5 +1,5 @@
 program
-    function void hello number a do
+    function number hello number a do
         number a;
         return a
 start
