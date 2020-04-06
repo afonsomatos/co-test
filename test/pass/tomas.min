@@ -1,4 +1,5 @@
 program
+    number hello[3][5][10]
 start
 	t := 3!
 	'a'!
