@@ -35,6 +35,7 @@
 | no_end.min | 'program' with no 'end'
 | no_start.min | 'program' with no 'start'
 | non_special_char.min | Tries to escape a non-special character ('\\v')
+| pointer1.min | Tries to store pointer to allocated memory in a 'number'
 | program_unaligned.min | 'program' is not in the start of the line
 | program_var_fail.min | 'program' appears in the start of the line inside the program itself
 | repeated.min | Local variable 'a' has the same name as function argument 'a'
