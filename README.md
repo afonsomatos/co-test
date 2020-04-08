@@ -36,3 +36,5 @@ PASSED test/pass/enunciado/isbn10.min
  ===== FAIL TESTS ===== 
 PASSED test/fail/ack.min
 ```
+
+Note: `./stages.sh sourceDir` also lists passed/total FAIL tests by project stage
