@@ -17,11 +17,11 @@ start
     hello;
 
     if x > 5 then
-        "Maior que 5"!
+        "Larger than 5"! "\n"!
     elif x <= 0 then
-        "Nao positivo"!
+        "Non-positive"! "\n"!
     else
-        "Entre 1 e 5"!
+        "Between 1 and 5"! "\n"!
     fi
 
     s # x;
@@ -31,7 +31,7 @@ start
         if (s[i - 1] ^ 2 - s[i - 1]) / 2 % 2 then
             repeat
         fi
-        "Ending loop abruptly"!
+        "Ending loop abruptly"! "\n"!
         stop
     done
 

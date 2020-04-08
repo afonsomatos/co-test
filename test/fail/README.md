@@ -5,8 +5,11 @@
 | 2char.min | Two characters inside a single char ('ab')
 | ack.min | Ackermann function, but function 'argc' has no return type
 | addr.min | Tests address of a number literal (&3)
+| addr2.min | Tests address of a string variable
 | bignumber.min | 2^31 + 1 in decimal
 | char_slash.min | Tests '\\'
+| di.min | Tries to index a number x (x[0])
+| dim.min | Declares a string with a dimension
 | elif_no_if.min | 'elif' without a previous 'if'
 | else_no_if.min | 'else' without a previous 'if'
 | empty.min | Empty file
@@ -15,10 +18,11 @@
 | endquote1.min | Tests '\\"'
 | forwardbody.min | A number that is declared as 'forward', but is initialized
 | forwardbody2.min | A function that is declared as 'forward', but is implemented
+| invalid_args.min | Passes string arguments to function with number parameters
+| invalid_args2.min | Few argumtents passed to function call
 | invalid_repeat.min | 'repeat' outside a loop
 | invalid_stop.min | 'stop outside a loop
 | invalid_types1.min | Assign string to number
-| invalid_types2.min | Add number to string
 | invalid_types3.min | Initialize string with a number value *(not confirmed)*
 | invalid_types4.min | 'void' function that returns a number
 | invalid_types5.min | A function that should return 'number', but returns nothing
@@ -39,6 +43,7 @@
 | semicolon1.min | No semicolon (;) after an assignement expression (x := 3)
 | semicolon2.min | Semicolon after last function parameter
 | semicolon3.min | Semicolon after last declaration (in the declarations zone)
+| straritm.min | Add number to string
 | too_large_bin.min | 2^31 + 1 in binary
 | too_large_dec.min | 2^31 + 1 in decimal
 | too_large_hex.min | 2^31 + 1 in hexadecimal
@@ -47,3 +52,4 @@
 | undefined1.min | Undefined variable
 | unfinished_comment_2.min | A multiline comment that is never finished, after a finished one
 | unfineshed_comment.min | A multiline comment that is never finished
+| void.min | Tries to use the result of a void function call in an expression
