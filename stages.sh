@@ -62,25 +62,21 @@ done
 echo " ===== FAIL TESTS ===== [should not compile]"
 for f in $(find test/fail -name "*.min"); do
 	stage=$(grep -w ${f##*/} test/fail/README.md | cut -d' ' -f2)
+	if [[ -z ${stage} ]]; then
+		stage="OTHER"
+	fi
+	stageTxt="\e[1;35m${stage}\e[0m"
 	"$srcDir/$exe" < $f &>/dev/null
 
 	if [ $? -ne 0 ]; then
         ((failPass++))
-		if [[ -z $stage ]]; then
-			((stagePass[OTHER]++))
-		else
-			((stagePass[$stage]++))
-		fi
-		echo -e $passed "\e[1;35m${stage}\e[0m" $f
+		((stagePass[$stage]++))
+		echo -e $passed $stageTxt $f
 	else
-		echo -e $failed "\e[1;35m${stage}\e[0m" $f
+		echo -e $failed $stageTxt $f
 	fi
     ((failTotal++))
-	if [[ -z $stage ]]; then
-		((stageTotal[OTHER]++))
-	else
-		((stageTotal[$stage]++))
-	fi
+	((stageTotal[$stage]++))
 done
 
 echo " ===== STATUS ===== "

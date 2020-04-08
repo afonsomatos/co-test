@@ -16,6 +16,7 @@ Project stage | File | Description
 | GRAM | addr.min | Tests address of a number literal (&3)
 | SEM | addr2.min | Tests address of a string variable
 | GRAM | arraychar.min | A char in array initialization
+| GRAM | arrayinit.min | Initialize array in the main function
 | LEX | bignumber.min | 2^31 + 1 in decimal
 | LEX | char_slash.min | Tests '\\'
 | GRAM | chardim.min | Declare array with char as dimension (array x['\\2'])
@@ -29,11 +30,12 @@ Project stage | File | Description
 | LEX | endquote1.min | Tests '\\"'
 | SEM | forwardbody.min | A number that is declared as 'forward', but is initialized
 | SEM | forwardbody2.min | A function that is declared as 'forward', but is implemented
+| SEM | fnindex.min | Trying to index a function
 | SEM | invalid_args.min | Passes string arguments to function with number parameters
 | SEM | invalid_args2.min | Few argumtents passed to function call
 | SEM | invalid_repeat.min | 'repeat' outside a loop
-| SEM | invalid_return.min | 
-| SEM | invalid_stop.min | 'stop outside a loop
+| SEM | invalid_return.min | Return string literal in the main function
+| SEM | invalid_stop.min | 'stop' outside a loop
 | SEM | invalid_types1.min | Assign string to number
 | SEM | invalid_types3.min | Initialize string with a number value
 | SEM | invalid_types4.min | 'void' function that returns a number
