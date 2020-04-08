@@ -1,6 +1,5 @@
 program
-    number x;
     string y := "hello"
 start
-    x := &y;
+    &y!
 end
