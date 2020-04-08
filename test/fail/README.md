@@ -15,8 +15,10 @@ Project stage | File | Description
 | GRAM | ack.min | Ackermann function, but function 'argc' has no return type
 | GRAM | addr.min | Tests address of a number literal (&3)
 | SEM | addr2.min | Tests address of a string variable
+| GRAM | arraychar.min | A char in array initialization
 | LEX | bignumber.min | 2^31 + 1 in decimal
-| LEX | Tests '\\'
+| LEX | char_slash.min | Tests '\\'
+| GRAM | chardim.min | Declare array with char as dimension (array x['\\2'])
 | SEM | di.min | Tries to index a number x (x[0])
 | SEM | dim.min | Declares a string with a dimension
 | GRAM | elif_no_if.min | 'elif' without a previous 'if'
@@ -30,6 +32,7 @@ Project stage | File | Description
 | SEM | invalid_args.min | Passes string arguments to function with number parameters
 | SEM | invalid_args2.min | Few argumtents passed to function call
 | SEM | invalid_repeat.min | 'repeat' outside a loop
+| SEM | invalid_return.min | 
 | SEM | invalid_stop.min | 'stop outside a loop
 | SEM | invalid_types1.min | Assign string to number
 | SEM | invalid_types3.min | Initialize string with a number value
@@ -61,5 +64,5 @@ Project stage | File | Description
 | LEX | too_large_oct.min | 2^31 + 1 in octal
 | SYMB | undefined1.min | Undefined variable
 | LEX | unfinished_comment_2.min | A multiline comment that is never finished, after a finished one
-| LEX | unfineshed_comment.min | A multiline comment that is never finished
+| LEX | unfinished_comment.min | A multiline comment that is never finished
 | SEM | void.min | Tries to use the result of a void function call in an expression
