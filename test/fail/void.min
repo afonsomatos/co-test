@@ -1,0 +1,5 @@
+program
+    function void x do "hello" !
+start   
+    x + 123 !
+end

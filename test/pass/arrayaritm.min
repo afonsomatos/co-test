@@ -1,0 +1,5 @@
+program
+    array x
+start
+    3 - x !
+end
