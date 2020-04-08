@@ -1,3 +1,4 @@
 *.asm
+*.swp
 *.out
 *.c
