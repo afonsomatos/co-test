@@ -1,0 +1,6 @@
+program
+    array x := 0;
+    string y := 0
+start
+end
+
