@@ -1,6 +1,8 @@
 program
-    array x := 0;
-    string y := 0
+    array x;
+    string y
 start
+    x := 0;
+    y := 0;
 end
 
