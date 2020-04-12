@@ -16,13 +16,17 @@ Project stage | File | Description
 | GRAM | addr.min | Tests address of a number literal (&3)
 | SEM | addr2.min | Tests address of a string variable
 | GRAM | arraychar.min | A char in array initialization
+| SEM | arraydecl.min | Initialize array with 1 element, without defining its size
 | GRAM | arrayinit.min | Initialize array in the main function
+| GRAM | arrayinit2.min | Array initializer used in an expression
 | LEX | bignumber.min | 2^31 + 1 in decimal
 | LEX | char_slash.min | Tests '\\'
+| SEM | const.min | Tries to assign value to const variable, after declaration
 | GRAM | chardim.min | Declare array with char as dimension (array x['\\2'])
 | SEM | di.min | Tries to index a number x (x[0])
 | SEM | dim.min | Declares a string with a dimension
 | GRAM | elif_no_if.min | 'elif' without a previous 'if'
+| SEM | elifvoid.min | 'elif' condition is a void function call
 | GRAM | else_no_if.min | 'else' without a previous 'if'
 | LEX | empty.min | Empty file
 | LEX | end_unaligned.min | 'end' is not in the start of the line
@@ -30,6 +34,9 @@ Project stage | File | Description
 | LEX | endquote1.min | Tests '\\"'
 | SEM | forwardbody.min | A number that is declared as 'forward', but is initialized
 | SEM | forwardbody2.min | A function that is declared as 'forward', but is implemented
+| SEM | init_arr_no_size.min | Array initialized without declaring its size
+| SEM | init0str.min | Initlializing string with value 0 (null pointer)
+| SEM | fnatr.min | Trying to assign a value to a function call 
 | SEM | fnindex.min | Trying to index a function
 | SEM | invalid_args.min | Passes string arguments to function with number parameters
 | SEM | invalid_args2.min | Few argumtents passed to function call
@@ -42,7 +49,13 @@ Project stage | File | Description
 | SEM | invalid_types5.min | A function that should return 'number', but returns nothing
 | SEM | invalid_types6.min | Assign string to a position in an array
 | SEM | invalid_types7.min | A function that should return 'string', but returns a number
+| SEM | invaliddim.min | Array initialized with size 0
+| GRAM | invaliddim2.min | Array initialized with negative size
+| GRAM | invaliddim3.min | Array initialized with an expresssion
 | SEM | invalidfn.min | Trying to call a number x (x(10))
+| SEM | invalidindex.min | Trying to index an array using a string literal (x["123"])
+| SEM | invalidindex2.min | Trying to index an array using a string variable with value 0
+| SEM | missingforward.min | Function declared and not implemented, but not 'forward'
 | LEX | module_unaligned.min | 'module' is not in the start of the line
 | GRAM | multidim.min | Tests a 2D array (there are no multidimensional arrays in minor)
 | GRAM | multiindex.min | Tests 2D array indexing (there are no multidimensional arrays in minor). Note: It should also fail because array declaration has no size
@@ -50,8 +63,11 @@ Project stage | File | Description
 | GRAM | no_start.min | 'program' with no 'start'
 | LEX | non_special_char.min | Tries to escape a non-special character ('\\v')
 | SEM | pointer1.min | Tries to store pointer to allocated memory in a 'number'
+| SEM | printvoid.min | Tries to print a void function call
 | LEX | program_unaligned.min | 'program' is not in the start of the line
 | LEX | program_var_fail.min | 'program' appears in the start of the line inside the program itself
+| SYMB | reference1.min | 'number' variable referenced before assignment
+| SYMB | reference2.min | 'array' variable referenced before assignment
 | SYMB | repeated.min | Local variable 'a' has the same name as function argument 'a'
 | SEM | return_at_end.min | 'return' in the main function, but outside any block
 | SEM | return_in_main.min | 'return' in the main function, but outside any block
@@ -59,12 +75,23 @@ Project stage | File | Description
 | GRAM | semicolon2.min | Semicolon after last function parameter
 | GRAM | semicolon3.min | Semicolon after last declaration (in the declarations zone)
 | SEM | straritm.min | Add number to string
+| SEM | strdecl.min | Assign number to string
+| SEM | strwithnumber.min | Compare string with number (<)
+| SEM | strwithnumber2.min | Compare string with number (>)
+| SEM | strwithnumber3.min | Compare string with number (=)
+| SEM | strwithnumber4.min | Compare string with number (>=)
+| SEM | strwithnumber5.min | Compare string with number (<=)
+| SEM | strwithnumber6.min | Compare string with number (~=)
 | LEX | too_large_bin.min | 2^31 + 1 in binary
 | LEX | too_large_dec.min | 2^31 + 1 in decimal
 | LEX | too_large_hex.min | 2^31 + 1 in hexadecimal
 | LEX | too_large_in_str.min | Tests a very large number (not representable in minor) as part of a string
 | LEX | too_large_oct.min | 2^31 + 1 in octal
 | SYMB | undefined1.min | Undefined variable
+| SYMB | undefined_func.min | Calling function before definition
 | LEX | unfinished_comment_2.min | A multiline comment that is never finished, after a finished one
 | LEX | unfinished_comment.min | A multiline comment that is never finished
 | SEM | void.min | Tries to use the result of a void function call in an expression
+| SEM | void2.min | Tries to use the result of a void function call in an 'until' condition
+| SEM | void3.min | Tries to use the result of a void function call in a comparison expression (<)
+| SEM | void4.min | 'void' function that returns a call to another 'void' function
