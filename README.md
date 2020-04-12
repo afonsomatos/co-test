@@ -1,4 +1,6 @@
 `./run-tests.sh sourceDir`
+OR
+`./stages.sh sourceDir` (which is a little slower, but also lists passed/total FAIL tests by project stage)
 
 Where `sourceDir` contains a Makefile for your compiler.
 
@@ -36,5 +38,3 @@ PASSED test/pass/enunciado/isbn10.min
  ===== FAIL TESTS ===== 
 PASSED test/fail/ack.min
 ```
-
-Note: `./stages.sh sourceDir` also lists passed/total FAIL tests by project stage
