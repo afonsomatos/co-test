@@ -2,7 +2,8 @@ program
     string x := "Hello!";
 
     function void goodbye do 
-        string x := "Goodbye!" !
+        string x;
+        x := "Goodbye!" !
 start
     x!
     goodbye;
