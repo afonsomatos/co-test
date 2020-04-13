@@ -32,12 +32,14 @@ Project stage | File | Description
 | LEX | end_unaligned.min | 'end' is not in the start of the line
 | LEX | end.min | File with only the keyword 'end'
 | LEX | endquote1.min | Tests '\\"'
+| SEM | failtypes.min | Calls function with one argument of the right type, and other of the wrong type
+| SEM | fnatr.min | Trying to assign a value to a function call 
+| SEM | fnindex.min | Trying to index a function
+| SEM | forward_fail.min | Function forward declaration arguments' types don't match with the ones in the implementation
 | SEM | forwardbody.min | A number that is declared as 'forward', but is initialized
 | SEM | forwardbody2.min | A function that is declared as 'forward', but is implemented
 | SEM | init_arr_no_size.min | Array initialized without declaring its size
 | SEM | init0str.min | Initlializing string with value 0 (null pointer)
-| SEM | fnatr.min | Trying to assign a value to a function call 
-| SEM | fnindex.min | Trying to index a function
 | SEM | invalid_args.min | Passes string arguments to function with number parameters
 | SEM | invalid_args2.min | Few argumtents passed to function call
 | SEM | invalid_repeat.min | 'repeat' outside a loop
@@ -49,6 +51,7 @@ Project stage | File | Description
 | SEM | invalid_types5.min | A function that should return 'number', but returns nothing
 | SEM | invalid_types6.min | Assign string to a position in an array
 | SEM | invalid_types7.min | A function that should return 'string', but returns a number
+| SEM | invaliddecl1.min | Function return value in forward declaration is different from return value in implementation
 | SEM | invaliddim.min | Array initialized with size 0
 | GRAM | invaliddim2.min | Array initialized with negative size
 | GRAM | invaliddim3.min | Array initialized with an expresssion
