@@ -39,7 +39,7 @@ Project stage | File | Description
 | SEM | forwardbody.min | A number that is declared as 'forward', but is initialized
 | SEM | forwardbody2.min | A function that is declared as 'forward', but is implemented
 | SEM | init_arr_no_size.min | Array initialized without declaring its size
-| SEM | init0str.min | Initlializing string with value 0 (null pointer)
+| SEM | init0str.min | Initlializing string with value 0 (null pointer) (Note: this is valid in assignment, not initialization)
 | SEM | invalid_args.min | Passes string arguments to function with number parameters
 | SEM | invalid_args2.min | Few argumtents passed to function call
 | SEM | invalid_repeat.min | 'repeat' outside a loop
@@ -79,6 +79,7 @@ Project stage | File | Description
 | GRAM | semicolon3.min | Semicolon after last declaration (in the declarations zone)
 | SEM | straritm.min | Add number to string
 | SEM | strdecl.min | Assign number to string
+| SEM | string0char.min | Assign literal char 0 ('\0') to string (Note: this is only valid for literal int (e.g. 0, 0b0, ...), not literal char)
 | SEM | strwithnumber.min | Compare string with number (<)
 | SEM | strwithnumber2.min | Compare string with number (>)
 | SEM | strwithnumber3.min | Compare string with number (=)
