@@ -71,7 +71,11 @@ Project stage | File | Description
 | LEX | program_var_fail.min | 'program' appears in the start of the line inside the program itself
 | SYMB | reference1.min | 'number' variable referenced before assignment
 | SYMB | reference2.min | 'array' variable referenced before assignment
-| SYMB | repeated.min | Local variable 'a' has the same name as function argument 'a'
+| SYMB | repeated1.min | Local variable 'a' has the same name as function argument 'a'
+| SYMB | repeated2.min | Two global variables with same name and type
+| SYMB | repeated3.min | Two global variables with same name but different type
+| SYMB | repeated4.min | A global variable and a function with same name
+| SYMB | repeated5.min | Two local variables (local to main funcition) with same name
 | SEM | return_at_end.min | 'return' in the main function, but outside any block
 | SEM | return_in_main.min | 'return' in the main function, but outside any block
 | GRAM | semicolon1.min | No semicolon (;) after an assignement expression (x := 3)
