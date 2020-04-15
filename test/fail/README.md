@@ -22,6 +22,7 @@ Project stage | File | Description
 | LEX | bignumber.min | 2^31 + 1 in decimal
 | LEX | char_slash.min | Tests '\\'
 | SEM | const.min | Tries to assign value to const variable, after declaration
+| SEM | const_alloc.min | Tries to allocate memory to const variable
 | GRAM | chardim.min | Declare array with char as dimension (array x['\\2'])
 | SEM | di.min | Tries to index a number x (x[0])
 | SEM | dim.min | Declares a string with a dimension
