@@ -11,6 +11,7 @@ Note: What each student implements on each phsase can vary.
 
 Project stage | File | Description                                                   
 |--------------|------|------------                                                                 
+| SEM | 2atrib0.min | Tests chained atribution with different types
 | LEX | 2char.min | Two characters inside a single char ('ab')
 | GRAM | ack.min | Ackermann function, but function 'argc' has no return type
 | GRAM | addr.min | Tests address of a number literal (&3)
