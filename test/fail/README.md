@@ -60,6 +60,7 @@ Project stage | File | Description
 | SEM | invalidfn.min | Trying to call a number x (x(10))
 | SEM | invalidindex.min | Trying to index an array using a string literal (x["123"])
 | SEM | invalidindex2.min | Trying to index an array using a string variable with value 0
+| GRAM | lval_paren.min | Trying to assign to variable between parentheses
 | SEM | missingforward.min | Function declared and not implemented, but not 'forward'
 | LEX | module_unaligned.min | 'module' is not in the start of the line
 | GRAM | multidim.min | Tests a 2D array (there are no multidimensional arrays in minor)
