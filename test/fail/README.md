@@ -22,9 +22,9 @@ Project stage | File | Description
 | GRAM | arrayinit2.min | Array initializer used in an expression
 | LEX | bignumber.min | 2^31 + 1 in decimal
 | LEX | char_slash.min | Tests '\\'
+| GRAM | chardim.min | Declare array with char as dimension (array x['\\2'])
 | SEM | const.min | Tries to assign value to const variable, after declaration
 | SEM | const_alloc.min | Tries to allocate memory to const variable
-| GRAM | chardim.min | Declare array with char as dimension (array x['\\2'])
 | SEM | di.min | Tries to index a number x (x[0])
 | SEM | dim.min | Declares a string with a dimension
 | GRAM | elif_no_if.min | 'elif' without a previous 'if'
@@ -50,7 +50,6 @@ Project stage | File | Description
 | SEM | invalid_types1.min | Assign string to number
 | SEM | invalid_types3.min | Initialize string with a number value
 | SEM | invalid_types4.min | 'void' function that returns a number
-| SEM | invalid_types5.min | A function that should return 'number', but returns nothing
 | SEM | invalid_types6.min | Assign string to a position in an array
 | SEM | invalid_types7.min | A function that should return 'string', but returns a number
 | SEM | invaliddecl1.min | Function return value in forward declaration is different from return value in implementation
@@ -72,8 +71,6 @@ Project stage | File | Description
 | SEM | printvoid.min | Tries to print a void function call
 | LEX | program_unaligned.min | 'program' is not in the start of the line
 | LEX | program_var_fail.min | 'program' appears in the start of the line inside the program itself
-| SYMB | reference1.min | 'number' variable referenced before assignment
-| SYMB | reference2.min | 'array' variable referenced before assignment
 | SYMB | repeated1.min | Local variable 'a' has the same name as function argument 'a'
 | SYMB | repeated2.min | Two global variables with same name and type
 | SYMB | repeated3.min | Two global variables with same name but different type
