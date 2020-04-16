@@ -11,6 +11,7 @@ Note: What each student implements on each phsase can vary.
 
 Project stage | File | Description                                                   
 |--------------|------|------------                                                                 
+| SEM | 2atrib0.min | Tests chained atribution with different types
 | LEX | 2char.min | Two characters inside a single char ('ab')
 | GRAM | ack.min | Ackermann function, but function 'argc' has no return type
 | GRAM | addr.min | Tests address of a number literal (&3)
@@ -59,6 +60,7 @@ Project stage | File | Description
 | SEM | invalidfn.min | Trying to call a number x (x(10))
 | SEM | invalidindex.min | Trying to index an array using a string literal (x["123"])
 | SEM | invalidindex2.min | Trying to index an array using a string variable with value 0
+| GRAM | lval_paren.min | Trying to assign to variable between parentheses
 | SEM | missingforward.min | Function declared and not implemented, but not 'forward'
 | LEX | module_unaligned.min | 'module' is not in the start of the line
 | GRAM | multidim.min | Tests a 2D array (there are no multidimensional arrays in minor)
