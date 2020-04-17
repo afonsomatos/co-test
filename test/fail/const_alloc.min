@@ -1,5 +1,5 @@
 program
-    const string s := "abc";
+    const string s := "abc"
 start
     s # 10;
 end
